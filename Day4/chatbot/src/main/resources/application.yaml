@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: chatbot
+
+  ai:
+    openai:
+      api-key: ${OPENROUTER_API_KEY}
+      base-url: https://openrouter.ai/api
+      chat:
+        completions-path: /v1/chat/completions
+        model: ${CHAT_MODEL}
+        options:
+          max-tokens: 2000
