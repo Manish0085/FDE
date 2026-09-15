@@ -8,9 +8,12 @@ spring:
   ai:
     openai:
       api-key: ${OPENROUTER_API_KEY}
-      base-url: https://openrouter.ai/api
+      base-url: https://openrouter.ai/api/v1
       chat:
         model: ${CHAT_MODEL}
-        completions-path: /api/v1/completions
         options:
-          max-token: 2000
+          max-tokens: 2000
+
+weather:
+  api:
+    key: ${WEATHER_API_KEY}

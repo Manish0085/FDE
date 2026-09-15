@@ -65,6 +65,7 @@ public class CalculatorTool {
             double num2
     ) {
 
+        System.out.println("Calculator tool called");
         validateNumber(num1, "num1");
         validateNumber(num2, "num2");
 
